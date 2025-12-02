@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1234567890123456789012345678901 /* BeautyTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1234567890123456789012345678901 /* BeautyTrackApp.swift */; };
+		A2234567890123456789012345678901 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2234567890123456789012345678901 /* ContentView.swift */; };
+		A3234567890123456789012345678901 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3234567890123456789012345678901 /* Product.swift */; };
+		A3334567890123456789012345678901 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3334567890123456789012345678901 /* Expense.swift */; };
+		A4234567890123456789012345678901 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4234567890123456789012345678901 /* Receipt.swift */; };
+		A5234567890123456789012345678901 /* ReceiptItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5234567890123456789012345678901 /* ReceiptItem.swift */; };
+		A6234567890123456789012345678901 /* InventoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6234567890123456789012345678901 /* InventoryManager.swift */; };
+		A7234567890123456789012345678901 /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7234567890123456789012345678901 /* InventoryView.swift */; };
+		A8234567890123456789012345678901 /* AddProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8234567890123456789012345678901 /* AddProductView.swift */; };
+		A9234567890123456789012345678901 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9234567890123456789012345678901 /* ProductDetailView.swift */; };
+		AA234567890123456789012345678901 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA234567890123456789012345678901 /* DashboardView.swift */; };
+		AB234567890123456789012345678901 /* ReceiptsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB234567890123456789012345678901 /* ReceiptsView.swift */; };
+		AC234567890123456789012345678901 /* ReceiptScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC234567890123456789012345678901 /* ReceiptScannerView.swift */; };
+		AD234567890123456789012345678901 /* ReorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD234567890123456789012345678901 /* ReorderView.swift */; };
+		AE234567890123456789012345678901 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE234567890123456789012345678901 /* SettingsView.swift */; };
+		AF234567890123456789012345678901 /* StockUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF234567890123456789012345678901 /* StockUpdateView.swift */; };
+		AG234567890123456789012345678901 /* ExpenseToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BG234567890123456789012345678901 /* ExpenseToastView.swift */; };
+		AH234567890123456789012345678901 /* ExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BH234567890123456789012345678901 /* ExpensesView.swift */; };
+		AI345678901234567890123456789012 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BI345678901234567890123456789012 /* UserPreferences.swift */; };
+		AJ345678901234567890123456789012 /* SalonCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BJ345678901234567890123456789012 /* SalonCategory.swift */; };
+		B0234567890123456789012345678901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0234567890123456789012345678901 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B1234567890123456789012345678901 /* BeautyTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyTrackApp.swift; sourceTree = "<group>"; };
+		B2234567890123456789012345678901 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B3234567890123456789012345678901 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		B3334567890123456789012345678901 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		B4234567890123456789012345678901 /* Receipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
+		B5234567890123456789012345678901 /* ReceiptItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptItem.swift; sourceTree = "<group>"; };
+		B6234567890123456789012345678901 /* InventoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryManager.swift; sourceTree = "<group>"; };
+		B7234567890123456789012345678901 /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
+		B8234567890123456789012345678901 /* AddProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductView.swift; sourceTree = "<group>"; };
+		B9234567890123456789012345678901 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		BA234567890123456789012345678901 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		BB234567890123456789012345678901 /* ReceiptsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptsView.swift; sourceTree = "<group>"; };
+		BC234567890123456789012345678901 /* ReceiptScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptScannerView.swift; sourceTree = "<group>"; };
+		BD234567890123456789012345678901 /* ReorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderView.swift; sourceTree = "<group>"; };
+		BE234567890123456789012345678901 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BF234567890123456789012345678901 /* StockUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockUpdateView.swift; sourceTree = "<group>"; };
+		BG234567890123456789012345678901 /* ExpenseToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseToastView.swift; sourceTree = "<group>"; };
+		BH234567890123456789012345678901 /* ExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesView.swift; sourceTree = "<group>"; };
+		BI345678901234567890123456789012 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		BJ345678901234567890123456789012 /* SalonCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonCategory.swift; sourceTree = "<group>"; };
+		C0234567890123456789012345678901 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1234567890123456789012345678901 /* BeautyTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautyTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1234567890123456789012345678901 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1234567890123456789012345678901 = {
+			isa = PBXGroup;
+			children = (
+				F1234567890123456789012345678901 /* BeautyTrack */,
+				E2234567890123456789012345678901 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2234567890123456789012345678901 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1234567890123456789012345678901 /* BeautyTrack.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1234567890123456789012345678901 /* BeautyTrack */ = {
+			isa = PBXGroup;
+			children = (
+				B1234567890123456789012345678901 /* BeautyTrackApp.swift */,
+				B2234567890123456789012345678901 /* ContentView.swift */,
+				B3234567890123456789012345678901 /* Product.swift */,
+				B4234567890123456789012345678901 /* Receipt.swift */,
+				B5234567890123456789012345678901 /* ReceiptItem.swift */,
+				B6234567890123456789012345678901 /* InventoryManager.swift */,
+				B7234567890123456789012345678901 /* InventoryView.swift */,
+				B8234567890123456789012345678901 /* AddProductView.swift */,
+				B9234567890123456789012345678901 /* ProductDetailView.swift */,
+				BA234567890123456789012345678901 /* DashboardView.swift */,
+				BB234567890123456789012345678901 /* ReceiptsView.swift */,
+				BC234567890123456789012345678901 /* ReceiptScannerView.swift */,
+				BD234567890123456789012345678901 /* ReorderView.swift */,
+				BE234567890123456789012345678901 /* SettingsView.swift */,
+				BF234567890123456789012345678901 /* StockUpdateView.swift */,
+				B3334567890123456789012345678901 /* Expense.swift */,
+				BG234567890123456789012345678901 /* ExpenseToastView.swift */,
+				BH234567890123456789012345678901 /* ExpensesView.swift */,
+				BI345678901234567890123456789012 /* UserPreferences.swift */,
+				BJ345678901234567890123456789012 /* SalonCategory.swift */,
+				C0234567890123456789012345678901 /* Assets.xcassets */,
+			);
+			path = BeautyTrack;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2234567890123456789012345678901 /* BeautyTrack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3234567890123456789012345678901 /* Build configuration list for PBXNativeTarget "BeautyTrack" */;
+			buildPhases = (
+				G1234567890123456789012345678901 /* Sources */,
+				D1234567890123456789012345678901 /* Frameworks */,
+				H1234567890123456789012345678901 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeautyTrack;
+			productName = BeautyTrack;
+			productReference = C1234567890123456789012345678901 /* BeautyTrack.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		I1234567890123456789012345678901 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					F2234567890123456789012345678901 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = I2234567890123456789012345678901 /* Build configuration list for PBXProject "BeautyTrack" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1234567890123456789012345678901;
+			productRefGroup = E2234567890123456789012345678901 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2234567890123456789012345678901 /* BeautyTrack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		H1234567890123456789012345678901 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0234567890123456789012345678901 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		G1234567890123456789012345678901 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1234567890123456789012345678901 /* BeautyTrackApp.swift in Sources */,
+				A2234567890123456789012345678901 /* ContentView.swift in Sources */,
+				A3234567890123456789012345678901 /* Product.swift in Sources */,
+				A4234567890123456789012345678901 /* Receipt.swift in Sources */,
+				A5234567890123456789012345678901 /* ReceiptItem.swift in Sources */,
+				A6234567890123456789012345678901 /* InventoryManager.swift in Sources */,
+				A7234567890123456789012345678901 /* InventoryView.swift in Sources */,
+				A8234567890123456789012345678901 /* AddProductView.swift in Sources */,
+				A9234567890123456789012345678901 /* ProductDetailView.swift in Sources */,
+				AA234567890123456789012345678901 /* DashboardView.swift in Sources */,
+				AB234567890123456789012345678901 /* ReceiptsView.swift in Sources */,
+				AC234567890123456789012345678901 /* ReceiptScannerView.swift in Sources */,
+				AD234567890123456789012345678901 /* ReorderView.swift in Sources */,
+				AE234567890123456789012345678901 /* SettingsView.swift in Sources */,
+				AF234567890123456789012345678901 /* StockUpdateView.swift in Sources */,
+				A3334567890123456789012345678901 /* Expense.swift in Sources */,
+				AG234567890123456789012345678901 /* ExpenseToastView.swift in Sources */,
+				AH234567890123456789012345678901 /* ExpensesView.swift in Sources */,
+				AI345678901234567890123456789012 /* UserPreferences.swift in Sources */,
+				AJ345678901234567890123456789012 /* SalonCategory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		J1234567890123456789012345678901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		J2234567890123456789012345678901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		K1234567890123456789012345678901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = V4444H3CQJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Beauty Tracker";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beautytrack.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		K2234567890123456789012345678901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = V4444H3CQJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Beauty Tracker";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beautytrack.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3234567890123456789012345678901 /* Build configuration list for PBXNativeTarget "BeautyTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				K1234567890123456789012345678901 /* Debug */,
+				K2234567890123456789012345678901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		I2234567890123456789012345678901 /* Build configuration list for PBXProject "BeautyTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				J1234567890123456789012345678901 /* Debug */,
+				J2234567890123456789012345678901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = I1234567890123456789012345678901 /* Project object */;
+}
