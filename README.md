@@ -1,178 +1,89 @@
-# Beauty Track - Nail Salon Inventory Management Application
+# Beauty Track
 
-PolishPad is a comprehensive iOS application designed specifically for nail salon inventory management. Built with SwiftUI and Core Data, it provides professional-grade inventory tracking, receipt processing, and intelligent reorder recommendations.
+Beauty Track is a professional-grade inventory and expense platform built for salons that live in iOS. The app combines SwiftUI, SwiftData, and VisionKit so owners can scan receipts, reconcile stock, and get reorder recommendations without leaving their phone.
 
-## Features
+## Highlights
+- **Live Dashboard** – KPIs for stock value, low inventory alerts, spending pace, and recent activity cards with one-tap shortcuts to scan, log usage, or run reorder analysis.
+- **Deep Inventory Tools** – Smart search across names/SKUs/categories, inline stock editing, color-coded availability, category filters, multi-sort views, and over 100 sample products to explore.
+- **Reorder Intelligence** – Usage-rate based urgency scoring (critical/high/medium), automated quantity suggestions, supplier price comparisons, and consumption charts.
+- **Receipt Automation** – VisionKit-powered OCR, salon-specific item heuristics, confidence scoring, multi-pack detection, “did you mean?” matches, and manual fallback entry with the same reconciliation flow.
+- **Multi-Location Awareness** – Independent counts per salon plus combined analytics, fast location switching, and transfer tracking.
+- **Configurable Settings** – Business profile, notification preferences, automation defaults, CSV export, and fully local privacy controls.
 
-### 🏠 Dashboard
-- **Real-time Metrics**: View total products, low stock alerts, monthly spending, and stock efficiency
-- **Quick Actions**: One-tap access to scan receipts, update stock, and view reorder recommendations
-- **Smart Search**: Real-time product search with fuzzy matching across names, SKUs, and categories
-- **Recent Activity**: Timeline of inventory changes, receipt processing, and alerts
-- **Analytics Charts**: Interactive spending trends and category distribution visualizations
+## Feature Deep Dive
+### Dashboard & Analytics
+- Real-time metrics for product count, low stock, monthly spend, and stock efficiency.
+- Activity timeline covering receipt imports, usage logs, and alerts.
+- Interactive charts showing spend by supplier/category and usage trends.
 
-### 📦 Inventory Management
-- **Product Database**: Comprehensive catalog with 100+ realistic nail salon items across 10 categories
-- **Smart Search**: Dual search results showing exact and partial matches
-- **Stock Tracking**: Visual stock indicators with color-coded status levels
-- **Quick Updates**: Instant stock adjustments with preset buttons (+/- 1, 5, 10)
-- **Category Filtering**: Easy filtering by Gel Polish, Acrylic System, Manual Tools, etc.
-- **Multi-sort Options**: Sort by name, stock level, category, supplier, or last updated
+### Inventory Management
+- Dual-result smart search (exact + fuzzy) with Combine-powered live updates.
+- Visual stock indicator (critical/low/healthy) plus preset adjustment buttons.
+- Filters for category, supplier, location, and sort toggles (name, stock, updated).
 
-### 🔄 Reorder Recommendations
-- **Intelligent Algorithm**: Usage rate calculations based on historical data and consumption patterns
-- **Urgency Levels**: Critical (<1 day), High (<4 days), Medium (<7 days) with color-coded indicators
-- **Vendor Comparison**: Price comparison between suppliers you've previously used
-- **Usage Analytics**: Interactive charts showing consumption trends by category
-- **Smart Suggestions**: Recommended reorder quantities based on usage patterns
-- **Supplier Tracking**: Maintain purchase history and supplier contact information
+### Receipt Processing
+- Camera, photo library, document picker, and VisionKit enhancement pipeline.
+- Automatic matching to existing products, new product creation, expense logging, and pack-size handling.
+- Manual Receipt Entry sheet mirrors the automated import path with structured fields.
 
-### 📄 Receipt Processing
-- **OCR Technology**: Advanced text recognition for receipt scanning
-- **Product Matching**: Intelligent matching with 85%+ confidence for automatic updates
-- **Partial Matching**: "Did you mean?" suggestions for 50-85% confidence matches
-- **New Product Detection**: Automatic detection of unknown products for easy addition
-- **Multi-pack Support**: Automatic quantity detection for items like "6PK"
-- **Spending Analysis**: Track supplier spending and generate expense reports
+### Reorder Recommendations
+- Moving-average usage calculation, days-until-empty projections, and urgency tagging.
+- Vendor history, price comparisons, and suggested quantities based on consumption.
 
-### 🏢 Multi-Location Support
-- **Location Management**: Manage multiple salon locations (Downtown, Westside, Midtown)
-- **Separate Tracking**: Each location maintains independent inventory and analytics
-- **Location Switching**: Easy switching between locations from any screen
-- **Consolidated Reporting**: View combined or location-specific analytics
-- **Transfer Management**: Track inventory movements between locations
+### Multi-Location Support
+- Manage multiple salons (e.g., Downtown, Westside) with isolated stock plus consolidated reports.
+- Track transfers and keep location context when scanning receipts or logging usage.
 
-### ⚙️ Settings & Configuration
-- **Business Profile**: Complete salon information management
-- **Notification Preferences**: Customizable alerts for low stock, reorder reminders, and reports
-- **Inventory Settings**: Default stock levels, reorder methods, and automation preferences
-- **Data Export**: CSV export for accounting and backup purposes
-- **Privacy Controls**: All data stored locally with no external server dependencies
+### Settings & Administration
+- Business profile, notification preferences, automation defaults, export tools, and privacy controls.
+- Optional sample data seeding for demos.
 
-## Technical Architecture
+## Technical Stack
+- **SwiftUI** for the entire interface (iOS 17+).
+- **SwiftData** for local persistence (with optional iCloud sync in production builds).
+- **VisionKit + Vision** for OCR, auto-cropping, and enhancement.
+- **Charts** and **Combine** for analytics and reactive flows.
 
-### Core Technologies
-- **SwiftUI**: Modern declarative UI framework for iOS 15+
-- **Core Data**: Local data persistence with iCloud sync support
-- **VisionKit**: OCR technology for receipt processing
-- **Charts Framework**: Interactive data visualizations
-- **Combine Framework**: Reactive programming for data flow
-
-### Data Models
-```swift
-// Core Entities
-- Product: Inventory items with stock tracking
-- Receipt: Receipt processing and OCR results  
-- Location: Multi-location management
-- Supplier: Vendor information and history
-```
+### Core Models
+- `Product` – Stock tracking, reorder signals, cost, and categorization.
+- `Expense` – Receipt-derived or manual expense logging.
+- `ReceiptItem`, `ParsedReceiptItem`, `ParsedReceipt` – OCR pipeline structures.
+- `Category`, `Supplier`, `UsageRecord`, and `InventoryManager` for business logic.
 
 ### Key Algorithms
-- **Usage Rate Calculation**: Moving average of bottles per week
-- **Reorder Timing**: Days until empty based on current usage patterns
-- **Fuzzy Matching**: Levenshtein distance for product identification
-- **Confidence Scoring**: OCR accuracy assessment for receipt processing
+- Usage-rate moving averages for reorder urgency.
+- Heuristic + fuzzy matching for receipt item identification.
+- Confidence-scored OCR with salon-specific keyword filtering and normalization.
 
-## Privacy & Security
+## Privacy, Security & Data Ownership
+- Local-first architecture: all data lives on device; no third-party servers.
+- iOS-level encryption plus optional iCloud backup (user-controlled).
+- No tracking, analytics, or ad SDKs. Full CSV export and data deletion tools.
 
-### Local-First Architecture
-- **No External Servers**: All data stored exclusively on your device
-- **iCloud Sync**: Optional iCloud sync for device backup and restoration
-- **Encryption**: iOS-level encryption for all stored data
-- **No Tracking**: No user activity tracking or analytics collection
+## Requirements & Setup
+- iOS 17.0+.
+- iPhone or iPad with camera access.
+- Minimum ~150 MB free space.
+- Build with Xcode 15+; run `xcodebuild -project BeautyTrack/BeautyTrack.xcodeproj -scheme BeautyTrack -destination 'platform=iOS Simulator,name=iPhone 17' build`.
 
-### Data Ownership
-- **Your Data**: Complete ownership and control of all business information
-- **Export Anytime**: Full data export capabilities in multiple formats
-- **Easy Deletion**: Simple data clearing and app reset options
+## Usage Workflow
+1. **Morning review** – check dashboard alerts and reorder list.
+2. **Receiving** – scan receipts or use manual entry as shipments arrive.
+3. **Daily operations** – log usage per service/location to keep stock accurate.
+4. **Weekly** – review analytics, export summaries, plan orders, and reconcile inventory.
 
-## Installation & Setup
+## Support & Policies
+- In-app Help Center with tutorials, Privacy Policy, and Terms of Service.
+- Contact: `support@beautytrack.app` (placeholder) or business phone M–F, 9a–5p PST.
+- Complies with CCPA/GDPR principles and Apple App Store guidelines.
 
-### Requirements
-- iOS 15.0 or later
-- iPhone or iPad with camera
-- Minimum 100MB storage space
+## Roadmap
+1. **v1.1** – Barcode scanning + advanced reporting widgets.
+2. **v1.2** – Team access with roles and audit trails.
+3. **v1.3** – Supplier integrations and third-party API hooks.
+4. **v2.0** – Predictive analytics and AI-powered forecasting.
 
-### Installation
-1. Download from the App Store
-2. Launch PolishPad
-3. Complete initial business profile setup
-4. Add your first products or scan a receipt
-5. Configure notification preferences
+## Licensing
+Beauty Track is commercial software. A single license covers all salon locations you operate; resale is prohibited. All business data remains yours, and exports are unlimited.
 
-### First-Time Setup
-1. **Business Information**: Enter salon name, address, and contact details
-2. **Location Setup**: Add multiple salon locations if applicable
-3. **Product Categories**: Customize categories to match your inventory
-4. **Notification Settings**: Configure alerts for your workflow
-5. **Sample Data**: Optionally load sample products to explore features
-
-## Usage Guide
-
-### Daily Workflow
-1. **Morning Check**: Review low stock alerts and reorder recommendations
-2. **Receipt Processing**: Scan new receipts as products arrive
-3. **Stock Updates**: Adjust inventory levels as products are used
-4. **Reorder Planning**: Review suggested reorders and vendor comparisons
-
-### Weekly Tasks
-1. **Analytics Review**: Check spending trends and usage patterns
-2. **Inventory Audit**: Verify physical stock against app records
-3. **Reorder Planning**: Place orders based on app recommendations
-4. **Report Generation**: Export data for accounting or analysis
-
-### Best Practices
-- **Regular Updates**: Keep stock levels current for accurate recommendations
-- **Receipt Scanning**: Scan receipts immediately upon product arrival
-- **Vendor Consistency**: Use consistent supplier names for accurate price tracking
-- **Location Management**: Ensure correct location is selected for multi-salon operations
-
-## Support & Documentation
-
-### In-App Help
-- **Help Center**: Comprehensive feature documentation and tutorials
-- **Privacy Policy**: Detailed privacy and data handling information
-- **Terms of Service**: Legal terms and conditions of use
-
-### Contact Support
-- **Email**: support@polishpad.com
-- **Phone**: (555) 987-6543
-- **Business Hours**: Monday-Friday, 9:00 AM - 5:00 PM PST
-
-### Legal Compliance
-- **CCPA Compliant**: California Consumer Privacy Act compliance
-- **GDPR Principles**: European data protection standards
-- **App Store Guidelines**: Full compliance with Apple App Store requirements
-
-## Future Enhancements
-
-### Planned Features
-- **Barcode Scanning**: Direct product barcode recognition
-- **Supplier Integration**: Direct ordering through integrated suppliers
-- **Advanced Analytics**: Predictive analytics and forecasting
-- **Team Management**: Multi-user access with role-based permissions
-- **API Integration**: Connect with accounting and POS systems
-
-### Roadmap
-- **Version 1.1**: Barcode scanning and advanced reporting
-- **Version 1.2**: Team collaboration and user management
-- **Version 1.3**: API integrations and third-party connections
-- **Version 2.0**: AI-powered predictive analytics and forecasting
-
-## License & Terms
-
-PolishPad is a commercial application available on the Apple App Store. By using the application, you agree to the Terms of Service and Privacy Policy included within the app.
-
-### Business License
-- **Commercial Use**: Licensed for business and commercial use
-- **Multi-Location**: Single license covers all salon locations
-- **No Resale**: License is non-transferable and for internal use only
-
-### Data License
-- **User Ownership**: All business data remains your property
-- **App License**: PolishPad retains ownership of the application software
-- **Export Rights**: Unlimited export and backup rights for your data
-
----
-
-**PolishPad** - Professional nail salon inventory management made simple.
+> Beauty Track – professional salon inventory, automated with intelligence.
