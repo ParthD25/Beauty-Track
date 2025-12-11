@@ -1,6 +1,6 @@
-# Beauty Track
+# Vanity Vault
 
-Beauty Track is a professional-grade inventory and expense platform built for salons that live in iOS. The app combines SwiftUI, SwiftData, and VisionKit so owners can scan receipts, reconcile stock, and get reorder recommendations without leaving their phone.
+Vanity Vault is a professional-grade inventory and expense platform built for salons that live in iOS. The app combines SwiftUI, SwiftData, and VisionKit so owners can scan receipts, reconcile stock, and get reorder recommendations without leaving their phone.
 
 ## Highlights
 - **Live Dashboard** – KPIs for stock value, low inventory alerts, spending pace, and recent activity cards with one-tap shortcuts to scan, log usage, or run reorder analysis.
@@ -64,7 +64,7 @@ Beauty Track is a professional-grade inventory and expense platform built for sa
 - iOS 17.0+.
 - iPhone or iPad with camera access.
 - Minimum ~150 MB free space.
-- Build with Xcode 15+; run `xcodebuild -project BeautyTrack/BeautyTrack.xcodeproj -scheme BeautyTrack -destination 'platform=iOS Simulator,name=iPhone 17' build`.
+- Build with Xcode 15+; run `xcodebuild -project VanityVault.xcodeproj -scheme VanityVault -destination 'platform=iOS Simulator,name=iPhone 17' build`.
 
 ## Usage Workflow
 1. **Morning review** – check dashboard alerts and reorder list.
@@ -74,7 +74,7 @@ Beauty Track is a professional-grade inventory and expense platform built for sa
 
 ## Support & Policies
 - In-app Help Center with tutorials, Privacy Policy, and Terms of Service.
-- Contact: `support@beautytrack.app` (placeholder) or business phone M–F, 9a–5p PST.
+- Contact: `support@vanityvault.app` (placeholder) or business phone M–F, 9a–5p PST.
 - Complies with CCPA/GDPR principles and Apple App Store guidelines.
 
 ## Roadmap
@@ -84,6 +84,6 @@ Beauty Track is a professional-grade inventory and expense platform built for sa
 4. **v2.0** – Predictive analytics and AI-powered forecasting.
 
 ## Licensing
-Beauty Track is commercial software. A single license covers all salon locations you operate; resale is prohibited. All business data remains yours, and exports are unlimited.
+Vanity Vault is commercial software. A single license covers all salon locations you operate; resale is prohibited. All business data remains yours, and exports are unlimited.
 
-> Beauty Track – professional salon inventory, automated with intelligence.
+> Vanity Vault – professional salon inventory, automated with intelligence.
